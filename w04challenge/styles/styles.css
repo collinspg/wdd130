@@ -1,0 +1,70 @@
+    #content{
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+    main{
+        text-align: center;
+        background-color:rgb(239, 185, 212) ;
+        position: relative;
+        padding: 20px;
+    }
+    header{
+        font-size: 4rem;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: white;
+    }
+    header:hover{
+        color:black
+    }
+   
+    .talks {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .talks ul {
+        text-align: left;
+        padding: 0;
+        list-style-type:numbers;
+    }
+
+    .talks li {
+        margin-bottom: 10px;
+    }
+    body{
+        background-color:rgb(239, 185, 212) ;
+        color: white;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: center;
+        border: 1rem;
+    }
+    
+    
+    .talks ul{
+        color: black;
+    }
+    img{
+        width: 10%;
+        height: 40%;
+        justify-content: center;
+    }
+    p{
+        justify-content: center;
+        font-size: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 300;
+    }
+    .content{
+        margin: 0%;
+        padding:0%;
+    }
+    footer{
+        font-size: 10px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: white;
+    }
+    footer:hover{
+        color:black
+    }
+    
