@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Texturina:opsz,wght@12..72,700&family=Urbanist:wght@700&display=swap');
+
 #content{
     max-width: 1600px;
     margin:0 auto;
+}
+#logo_link{
+    padding-top: 5px;
 }
 nav a
 #hero-msg h1, #hero-msg h4
@@ -15,6 +20,13 @@ main section{
 }
 body{
     background-color: #E9EDC9;
+    font-family: "Urbanist", Helvetica, sans-serif;
+    font-size: 22px;
+    margin:0;
+    padding:0;
+}
+h2{
+    margin:0;
 }
 header{
     background-color: #77a1af;
@@ -29,10 +41,21 @@ nav a:hover{
 .rapids-card {
   align-items: center;
   text-align: center;
+  margin: 200px 0;
+}
+.card-img{
+    border:10px solid #77a1af;
+}
+main section img{
+    box-sizing: border-box;
 }
 .book,.join{
     background-color:#77a1af;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
   
 }
 .book:hover, .join:hover{
@@ -42,11 +65,17 @@ nav a:hover{
 .msg{
     text-align: center;
     background-color:#77a1af;
+    line-height: 1.5em;
+    padding: 35px;
 }
 .msg h2,
 .msg p{
     color:black;
 }
+  .msg p{
+    font-size: .8em;
+    padding-bottom: 15px;
+} 
 #hero-msg{
     text-align: center;
 }
@@ -58,6 +87,8 @@ nav a:hover{
 footer{
     background-color:#77a1af; 
     color:black;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 footer a{
     background-color:#77a1af;
@@ -68,6 +99,9 @@ footer a:hover{
     background-color:#e39774 ;
     color:rgb(214, 232, 238) ;
 }
+.icon{
+    padding-top: 10px;
+}
 .logo, .icon{
     width:80px;
 }
@@ -77,9 +111,17 @@ footer a:hover{
 nav a{
     color:black;
     text-decoration: none;
+    padding: 35px;
 }
-.home_title{
+.Home-title, .msg h2{ 
+    font-family:"Texturina", Arial, sans-serif
+} 
+.Home-title{
     color:black;
+    font-size: 2em;
+    margin-top: 10px;
+    /* font-family:"Texturina", Arial, sans-serif */
+    
 
 }
 h4{
@@ -88,4 +130,7 @@ h4{
 footer p{
     font-size: 1.2em;
     text-decoration: underline;
+}
+footer.socail img{
+    padding-top: 15px;
 }
