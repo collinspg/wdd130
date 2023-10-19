@@ -153,19 +153,19 @@
   background-color: red; 
 } 
 .green5 { 
-  width:30%; 
-  height: 200px; 
+  width:400px; 
+  height: 300px; 
   background-color: green; 
   float:left;
   
 } 
 
 .yellow5 {
-  width: 70%; 
+  width: 1380px;; 
   height: 400px; 
   background-color: gold;
   text-align: justify;
-  font-size: large;
+  font-size: larger;
   
   
 
