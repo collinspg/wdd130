@@ -142,7 +142,7 @@
 /* Activity 5 styles */ 
 .content5 {
   /* This is the parent of the activity 5 boxes. */
-  max-height: 400px;
+ height: 400px;
   clear:both
 }
 .red5 { 
@@ -162,7 +162,8 @@
   height: 400px; 
   background-color: gold;
   text-align: justify;
-  font-size: 20px;
+  font-size: large;
+  margin-bottom: 0;
 
 } 
 .blue5 {
