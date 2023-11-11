@@ -335,7 +335,7 @@ footer.socail img{
     font-family: "Urbanist", Helvetica, sans-serif;
     font-size: 25px;
 }
-#hero-msg-contact h1{
+#hero-msg-contact h2{
     color: greenyellow;
     font-size: 2em;
     margin-top: 10px;
@@ -355,6 +355,12 @@ footer.socail img{
 }
 .contactus_msg1 p, .contactus_msg2 p, .contactus_msg3 p, .contactus_msg4 p{
     font-size: larger;
+}
+.contactus_msg1 h1, .contactus_msg2 h1, .contactus_msg3 h1, .contactus_msg4 h1{
+    color: black;
+    font-size: 2em;
+    margin-top: 10px;
+    font-family:"Texturina", Arial, sans-serif
 }
 /* media query */
 @media screen and (max-width: 900px) {
