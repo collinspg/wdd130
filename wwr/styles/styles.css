@@ -292,10 +292,15 @@ footer.socail img{
     box-shadow: 5px 5px 20px black;
     position: relative;
 }
-.msg1 p, .msg2 p, .msg3 p{
+.msg1 p, .msg2 p{
         font-family: "Urbanist", Helvetica, sans-serif;
         font-size: .9em;
         padding-bottom: 20px;
+}
+.msg3 p{
+    font-family: "Urbanist", Helvetica, sans-serif;
+        font-size: .9em;
+        padding-bottom: 10px;
 }
 .msg1 h4, .msg2 h4, .msg3 h4{
     font-size: 30px;
