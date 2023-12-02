@@ -160,10 +160,10 @@ footer.social img{
 }
 
 /* CSS for Services and Portfolio page */
-#all{
-    display: grid;
-    grid-row: 800px 800px;
-}
+
+.msg2{
+    margin-top:200px
+} 
 .msg1 h2,
 .msg2 h2{
  text-align: center;
@@ -173,7 +173,6 @@ footer.social img{
     text-align: center;
 }
 #background{
-    /* margin-top: 0; */
     height: 800px;
     grid-row: 1/2;
     background-color:#B2BEB5;
