@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>K.I.S Electrical Website</title>
+    <link rel="stylesheet" href="styles/styles.css" >
 </head>
 <body>
     <div id="content">
@@ -12,14 +13,15 @@
               <img class="logo" src="https://cdn-icons-png.flaticon.com/256/99/99744.png" alt="k.i.s Logo">
            </a>
            <nav>
-               <a href="services_and_portfolio.html">Services & Portfolio</a>
                <a href="home_page.html">Home</a>
+               <a href="services_and_portfolio.html" class="active">Services & Portfolio</a>
                <a href="faqs.html">Faqs</a>
                <a href="site-plan.html">Site Plan</a>
            </nav>
         </header>
         <div id="background"></div> 
         <main>
+            <div id="all">
             <div class="msg1">
                 <h1> SERVICES & PORTFOLIO</h1>
                 <h2>SERVICES</h2>
@@ -43,39 +45,39 @@
                 <p>This section contains images of diverse range completed works:</p>
             </div>
 
-        <div class="collins-slideshow">
-            <div class="collins-slide fade">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
                 <div class="numbertext">1/5</div>
                 <img src="images/main_1img-20231103-wa0002.jpg" alt="portfolio_1">
                 <div class="text">Image of Maintenance of lighting system on second floor room</div>    
             </div>
         
-            <div class="collins-slide fade">
+            <div class="mySlides ">
                 <div class="numbertext">2/5</div>
                 <img src="images/main_img-20231103-wa0013.jpg" alt="portfolio_2">
                 <div class="text">Image of Completed lighting system on the fourth floor</div>    
             </div>
         
-            <div class="collins-slide fade">
+            <div class="mySlides ">
                 <div class="numbertext">3/5</div>
                 <img src="images/IMG-20231103-WA0016.jpg" alt="portfolio_3">
                 <div class="text">Image of Completed lighting system in a hall</div>    
             </div>
         
-            <div class="collins-slide fade">
+            <div class="mySlides ">
                 <div class="numbertext">4/5</div>
                 <img src="images/IMG-20231103-WA0011.jpg" alt="portfolio_4">
                 <div class="text">Image of ongoing project on Chandelier</div>    
             </div>
         
-            <div class="collins-slide fade">
+            <div class="mySlides ">
                 <div class="numbertext">5/5</div>
                 <img src="images/IMG-20231103-WA0007.jpg" alt="portfolio_5">
                 <div class="text">Image of the completed project on Chandelier</div>    
             </div>
         
-            <a class="prev" onclick="plusSlides(-1)"></a>
-            <a class="next" onclick="plusSlides(1)"></a>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
         
         <div style="text-align:center">
@@ -87,7 +89,7 @@
                 <span class="dot" onclick="currentSlide(5)"></span>
             </div>
         </div>
-        
+        </div>
         </main>
 
         <footer><p>K.I.S &copy; 2023 - Collins Okolie</p>
@@ -107,6 +109,42 @@
             </div></footer>
 
     </div>
+    <script>
+    
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+
+             // Get the current page filename (e.g., "services_and_portfolio.html")
+            var currentPage = location.pathname.split("/").slice(-1)[0];
+
+            // Find the corresponding navigation link and add the "active" class
+            document.querySelector('header nav a[href="services_and_portfolio.html' + currentPage + '"]').classList.add('active');
+            document.querySelector('header nav a').classList.add('active');
+        </script>
 </body>
 </html>
 
