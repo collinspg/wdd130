@@ -32,7 +32,7 @@ header nav{
     font-size: 1.5em;
     text-align: center;
     padding:2rem;
-    position: absolute;
+    /* position: absolute; */
     bottom: 40rem;
     left: 14rem;
     right: 14rem;
@@ -74,18 +74,19 @@ p{
     grid-template-rows: repeat(4, 25%);
 }
 .summary img{
+    width: 90%;
     grid-row: 1/5;
 }
 .summary h2{
     font-family: "Averia Serif Libre";
-    margin-left: 10px;
+    margin-left: -50px;
     grid-column: 2/3;
     grid-row: 2/3;
 }
 .summary p{
     font-size: 25px;
     padding:15px;
-    margin-left: 0;
+    margin-left: -50px;
     margin-top: 15rem;
     grid-column: 2/3;
 }
