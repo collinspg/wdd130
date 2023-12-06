@@ -137,12 +137,8 @@
               dots[slideIndex-1].className += " active";
             }
 
-             // Get the current page filename (e.g., "services_and_portfolio.html")
-            var currentPage = location.pathname.split("/").slice(-1)[0];
-
-            // Find the corresponding navigation link and add the "active" class
-            document.querySelector('header nav a[href="services_and_portfolio.html' + currentPage + '"]').classList.add('active');
-            document.querySelector('header nav a').classList.add('active');
+             // Find the corresponding navigation link for Services & Portfolio and add the "active" class
+                document.querySelector('header nav a[href="services_and_portfolio.html"]').classList.add('active');
         </script>
 </body>
 </html>

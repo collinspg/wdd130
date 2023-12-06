@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>K.I.S Electrical Website</title>
+    <link rel="stylesheet" href="styles/styles.css" >
 </head>
 <body>
     <div id="content">
@@ -12,10 +13,10 @@
               <img class="logo" src="https://cdn-icons-png.flaticon.com/256/99/99744.png" alt="k.i.s Logo">
            </a>
            <nav>
-               <a href="faqs.html">Faqs</a>
-               <a href="home_page.html">Home</a>
-               <a href="services_and_portfolio.html">Services & Portfolio</a>
-               <a href="site-plan.html">Site Plan</a>
+            <a href="home_page.html">Home</a>
+            <a href="services_and_portfolio.html">Services & Portfolio</a>
+            <a href="faqs.html" class="active">FaQs</a>
+            <a href="site-plan.html">Site Plan</a>
            </nav>
         </header>
 
@@ -23,35 +24,47 @@
             <div id="hero-box-faqs">
                 <img id="hero-img-faqs" src="images/main_lighted_apartment.jpg" alt="An image of a well lighted apartment ">
             </div>
+       
+        <div id="hero-msg">
+            <h1 class="Home-title">FAQS</h1>
         </div>
 
-        <section id="hero-msg">
-            <h1 class="Home-title">FAQS</h1>
-        </section>
+        </div>
 
         <main>
+            <div class="faqs-msg1">
             <h2>Q: Can you handle both residential and commercial electrical projects?</h2>
             <p> A: Yes, we have extensive experience in both residential and commercial electrical projects. Our team is equipped to handle a diverse range of 
                 electrical services for homes, businesses, and industrial facilities.</p>
-
-            <img src="images/electrical_shock.jpg" alt="An image of a person who contacted electric shock">
-
-            <div class="faqs-msg">
-                <h2>Q: Are you licensed and insured?</h2>
-                <p>A: Yes, we are fully licensed and insured. Our team of electricians is trained and certified to handle a wide range of electrical projects safely 
-                   and effectively.</p>
-
-                <h2>Q: Do you offer emergency electrical services?</h2>
-                <p>A: Absolutely. We understand that electrical emergencies can occur at any time. We provide 24/7 emergency electrical services to address urgent
-                    issues promptly. Please call our emergency hotline for immediate assistance.</p>   
             </div>
 
+            <div class="faqs-column">
+            <img src="images/electrical_shock.jpg" alt="An image of a person who contacted electric shock">
+
+
+            <div class="faqs-msg">
+                <div class="faq-item">
+                    <h2>Q: Are you licensed and insured?</h2>
+                    <p>A: Yes, we are fully licensed and insured. Our team of electricians is trained and certified to handle a wide range of electrical projects safely 
+                    and effectively.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h2>Q: Do you offer emergency electrical services?</h2>
+                    <p>A: Absolutely. We understand that electrical emergencies can occur at any time. We provide 24/7 emergency electrical services to address urgent issues promptly. Please call our emergency hotline for immediate assistance.</p>
+            </div>
+
+            </div>
+            </div>
+
+            <div class="faqs-msg2">
             <h2>Q: What areas do you serve?</h2>
             <p>  A: We proudly serve Lagos Nigeria, and the surrounding regions. Please contact us to confirm if we provide services in your specific location.</p>
 
             <h2>Q: What payment options do you accept?</h2>
             <p>A: We accept various payment options, including cash, check, and major credit cards. We will provide detailed payment information and options when 
                 discussing your project or service request.</p>
+            </div>
 
         </main>
 
@@ -72,5 +85,11 @@
             </div></footer>  
 
         </div>
+
+        <script>
+              // Find the corresponding navigation link for FaQs and add the "active" class
+                document.querySelector('header nav a[href="faqs.html"]').classList.add('active');
+         
+        </script>
 </body>
 </html>
