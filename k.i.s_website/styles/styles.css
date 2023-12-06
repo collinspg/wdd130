@@ -283,9 +283,11 @@ footer.social img{
 }
 
 #hero-msg h1{
-    margin-top: -1300px;
+    color: #ffffff;
+    margin-top: -1000px;
     text-align: center;
     font-family: "Averia Serif Libre";
+   
 }
 .faqs-msg1{
     margin-top: 1300px;
@@ -346,6 +348,6 @@ footer.social img{
 }
 .faqs-msg2 h2, p{
     text-align: justify;
-    padding:10px;
+    padding:5px;
     margin-left: 20px;
 }
