@@ -276,8 +276,6 @@ footer.social img{
 
 /* FaQs page CSS */
 #hero-faqs{
-    display:grid;
-    grid-template-rows: repeat(3, 200px);
     position: relative;
 }
 #hero-img-faqs{
@@ -285,12 +283,12 @@ footer.social img{
 }
 
 #hero-msg h1{
-    margin-top: -100px;
+    margin-top: -1300px;
     text-align: center;
     font-family: "Averia Serif Libre";
 }
 .faqs-msg1{
-    margin-top: 900px;
+    margin-top: 1300px;
 }
 .faqs-msg1 h2, p{
     text-align: justify;
@@ -302,7 +300,7 @@ footer.social img{
     font-size: 30px;
 }
 .faqs-msg1 p, .faqs-msg p, .faqs-msg2 p{
-    font-size: 25px;
+    font-size: 20px;
 }
 .faqs-column {
     position: relative;
@@ -321,10 +319,10 @@ footer.social img{
     flex-wrap: wrap; 
     position: absolute;
     left: 35%;
-    right:5%;
+    right:3%;
     top: 5%;
     background-color: #B2BEB5; 
-    padding: 20px;
+    padding: 10px;
     color: black;
     text-align: justify;
     height: 90%;
